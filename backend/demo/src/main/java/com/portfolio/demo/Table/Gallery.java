@@ -3,7 +3,7 @@ package com.portfolio.demo.Table;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import java.time.LocalDateTime;
+
 
 @Entity
 @Data
@@ -21,7 +21,6 @@ public class Gallery {
 
     private String caption;
 
-    @Column(updatable = false)
-    private LocalDateTime uploadedAt = LocalDateTime.now();
+
 }
 

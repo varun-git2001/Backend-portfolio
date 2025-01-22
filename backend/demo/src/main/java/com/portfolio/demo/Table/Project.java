@@ -2,7 +2,6 @@ package com.portfolio.demo.Table;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -24,7 +23,5 @@ public class Project {
 
     private String technologies;
 
-    @Column(updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
 }
 

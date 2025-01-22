@@ -4,11 +4,10 @@ package com.portfolio.demo.Table;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.time.LocalDateTime;
-
 @Entity
 @Data
-public class Contact {
+public class Contact 
+{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -26,6 +25,4 @@ public class Contact {
     @Column(nullable = false)
     private String message;
 
-    @Column(updatable = false)
-    private LocalDateTime submittedAt = LocalDateTime.now();
 }
