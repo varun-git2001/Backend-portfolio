@@ -5,7 +5,8 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Project {
+public class Project 
+{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,9 +20,6 @@ public class Project {
 
     private String description;
 
-    private String url;
-
     private String technologies;
-
 }
 
